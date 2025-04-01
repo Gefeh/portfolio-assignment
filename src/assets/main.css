@@ -1,35 +1,26 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* Global dark mode defaults */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Pure black background */
+  color: #d3d3d3; /* Softer off-white text */
+  margin: 0;
+  padding: 0;
 }
 
-a,
-.green {
+a {
+  color: #4da6ff; /* Link color */
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
 
-@media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    text-decoration: underline;
   }
+
+/* Optional: Style headers and paragraphs to maintain consistency */
+h1, h2, h3, h4, h5, h6 {
+  color: #d3d3d3;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+p {
+  line-height: 1.6;
 }

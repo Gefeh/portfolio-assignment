@@ -1,0 +1,61 @@
+/* Reset some default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a nice background and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Layout containers */
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#game iframe {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/* Header styling */
+header {
+  background-color: #cc0000; /* rebellious red */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+/* Main content */
+main h2 {
+  font-size: 1.5em;
+  margin: 20px 0 10px 0;
+}
+
+main p, main ul {
+  margin-bottom: 15px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #eaeaea;
+}
