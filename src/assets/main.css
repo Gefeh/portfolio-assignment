@@ -1,14 +1,13 @@
-/* Global dark mode defaults */
 body {
   font-family: Arial, sans-serif;
-  background-color: #000; /* Pure black background */
-  color: #d3d3d3; /* Softer off-white text */
+  background-color: #000;
+  color: #d3d3d3;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #4da6ff; /* Link color */
+  color: #4da6ff;
   text-decoration: none;
 }
 
@@ -16,7 +15,6 @@ a {
     text-decoration: underline;
   }
 
-/* Optional: Style headers and paragraphs to maintain consistency */
 h1, h2, h3, h4, h5, h6 {
   color: #d3d3d3;
 }

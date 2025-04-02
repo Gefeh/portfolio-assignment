@@ -13,13 +13,13 @@
 
       <h2>Games</h2>
       <!-- Game Card -->
-      <GameCard imageSrc="/public/imgs/4CRt7_.png"
+      <GameCard imageSrc="4CRt7_.png"
                 title="SpaceCube"
                 genre="Arcade/Endless Runner (2025)"
                 description="A game about not crashing your spaceship into bright colorful cubes. I made this game in about a week, for a school project. Made in Unity and programmed in C#, and HTML/CSS for the UI."
                 itchLink="https://ben-dros.itch.io/spacecube" />
       <!-- Game Card -->
-      <GameCard imageSrc="/public\imgs\WNRm3O.png"
+      <GameCard imageSrc="WnRm3O.png"
                 title="Last Stand"
                 genre="Bullet Hell/Boss Rush (2023)"
                 description="A game about surviving against the clock for as long as you can. In this 2D Bullet Hell game you must dodge many pellets being hurled your way with menace. I designed and implemented the Illuminati fight in this game. Made in Unity and programmed in C#."
@@ -42,14 +42,12 @@
 </script>
 
 <style scoped>
-  /* Center the entire layout */
   .app-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
   }
 
-  /* Header styling remains centered */
   .header {
     text-align: center;
     margin-bottom: 20px;

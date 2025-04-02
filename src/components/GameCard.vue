@@ -1,5 +1,4 @@
 <template>
-  <!-- Entire card is clickable via the anchor wrapper -->
   <a :href="itchLink" target="_blank" class="game-card-wrapper">
     <div class="game-card">
       <img :src="imageSrc" :alt="title" class="game-card-image" />
@@ -27,13 +26,11 @@
 </script>
 
 <style scoped>
-  /* Make the entire card clickable */
   .game-card-wrapper {
     text-decoration: none;
     display: block;
   }
 
-  /* Base card styling */
   .game-card {
     display: flex;
     align-items: center;
@@ -46,13 +43,11 @@
     transition: background-color 0.5s ease;
   }
 
-  /* On hover, animate with a smoother, extended floating effect and lighten the background */
   .game-card-wrapper:hover .game-card {
     animation: float 6s ease-in-out infinite;
     background-color: #333;
   }
 
-  /* Keyframes for a smoother, subtle random movement with a fixed right offset */
   @keyframes float {
     0% {
       transform: translate(25px, 0px);
@@ -75,7 +70,6 @@
     }
   }
 
-  /* Image styling */
   .game-card-image {
     width: 130px;
     height: 130px;
@@ -84,14 +78,12 @@
     margin-right: 15px;
   }
 
-  /* Content container */
   .game-card-content {
     display: flex;
     align-items: center;
     flex: 1;
   }
 
-  /* Text container */
   .game-card-text {
     flex: 1;
   }
