@@ -13,6 +13,12 @@
 
       <h2>Games</h2>
       <!-- Game Card -->
+      <GameCard imageSrc="AfGH7t.png"
+                title="Water Waker"
+                genre="2D Physics Puzzle (2026)"
+                description="Coming soon!"
+                itchLink="":disabled="true"/>
+      <!-- Game Card -->
       <GameCard imageSrc="4CRt7_.png"
                 title="SpaceCube"
                 genre="Arcade/Endless Runner (2025)"
@@ -32,7 +38,7 @@
     </main>
 
     <footer>
-      <p>© 2025 Benjamin Dros. Most rights reserved (he knows what he did).</p>
+      <p>© 2026 Benjamin Dros. Most rights reserved (he knows what he did).</p>
     </footer>
   </div>
 </template>
@@ -43,6 +49,9 @@
 
 <style scoped>
   .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -51,5 +60,16 @@
   .header {
     text-align: center;
     margin-bottom: 20px;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
   }
 </style>

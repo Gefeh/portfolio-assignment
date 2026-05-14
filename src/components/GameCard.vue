@@ -1,7 +1,7 @@
 <template>
-  <a :href="itchLink" target="_blank" class="game-card-wrapper">
+  <a :href="disabled ? undefined : itchLink" :class="['game-card-wrapper', { disabled }]" :target="disabled ? undefined : '_blank'">
     <div class="game-card">
-      <img :src="imageSrc" :alt="title" class="game-card-image" />
+      <img :src="getImageUrl(imageSrc)" :alt="title" class="game-card-image" />
       <div class="game-card-content">
         <div class="game-card-text">
           <h3 class="game-card-title">{{ title }}</h3>
@@ -20,15 +20,30 @@
     genre: string;
     itchLink: string;
     description?: string;
+    disabled?: boolean;
   }
 
   const props = defineProps<Props>();
+
+  function getImageUrl(path: string): string {
+    return `${import.meta.env.BASE_URL}${path}`;
+  }
 </script>
 
 <style scoped>
   .game-card-wrapper {
     text-decoration: none;
     display: block;
+    pointer-events: none;
+  }
+
+  .game-card-wrapper:not(.disabled) {
+    pointer-events: auto;
+  }
+
+  .game-card-wrapper.disabled .game-card {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 
   .game-card {
